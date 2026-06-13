@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    "llm",
+    "rag",
+    "test",
+    "obsidian",
+    "kakao-map",
+    "agent",
+    "pigge_server",
+    "ai-agent",
+    "AI-Second-Brain",
+    "nadanaya"
+  ],
+  "edges": [
+    {
+      "from": "ai-agent",
+      "to": "agent"
+    },
+    {
+      "from": "AI-Second-Brain",
+      "to": "rag"
+    },
+    {
+      "from": "AI-Second-Brain",
+      "to": "llm"
+    },
+    {
+      "from": "AI-Second-Brain",
+      "to": "agent"
+    },
+    {
+      "from": "AI-Second-Brain",
+      "to": "obsidian"
+    }
+  ]
+}

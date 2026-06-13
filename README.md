@@ -1,5 +1,17 @@
-# Welcome to GitHub Desktop!
+# Obsidian Notes
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+Personal Obsidian vault and AI Brain OS scripts.
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+## Contents
+
+- `inbox/`, `Projects/`, and other vault folders contain personal Markdown notes.
+- `scripts/` contains local RAG, graph, and Streamlit dashboard utilities.
+- `connectors/` contains integration helpers.
+
+## Run
+
+```bash
+streamlit run scripts/app.py
+```
+
+The Streamlit dashboard expects Ollama to be available at `http://localhost:11434`.

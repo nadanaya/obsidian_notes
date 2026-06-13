@@ -1,0 +1,22 @@
+.remote_obsidian_notes_check/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local/vector database artifacts
+rag_db/
+scripts/rag_db/
+.smart-env/
+scripts/python
+
+# Obsidian local workspace and plugin bundles
+.obsidian/workspace.json
+.obsidian/plugins/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
