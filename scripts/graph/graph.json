@@ -1,15 +1,15 @@
 {
   "nodes": [
+    "AI-Second-Brain",
+    "ai-agent",
+    "agent",
     "llm",
     "rag",
-    "test",
+    "nadanaya",
     "obsidian",
-    "kakao-map",
-    "agent",
     "pigge_server",
-    "ai-agent",
-    "AI-Second-Brain",
-    "nadanaya"
+    "kakao-map",
+    "test"
   ],
   "edges": [
     {
