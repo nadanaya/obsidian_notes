@@ -1,15 +1,24 @@
 {
   "nodes": [
-    "AI-Second-Brain",
+    "2026-06-12",
+    "llm",
+    "desktop-tutorial",
     "ai-agent",
     "agent",
-    "llm",
     "rag",
-    "nadanaya",
-    "obsidian",
-    "pigge_server",
     "kakao-map",
-    "test"
+    "CodingTest",
+    "nadanaya",
+    "paw-mate-backend",
+    "pigge_server",
+    "obsidian",
+    "spring_blog",
+    "AI-Second-Brain",
+    "copilot",
+    "obsidian_notes",
+    "test",
+    "LCK-ALL-ProVoter",
+    "2026-06-13"
   ],
   "edges": [
     {
@@ -30,6 +39,26 @@
     },
     {
       "from": "AI-Second-Brain",
+      "to": "obsidian"
+    },
+    {
+      "from": "LCK-ALL-ProVoter",
+      "to": "agent"
+    },
+    {
+      "from": "obsidian_notes",
+      "to": "obsidian"
+    },
+    {
+      "from": "2026-06-12",
+      "to": "llm"
+    },
+    {
+      "from": "2026-06-12",
+      "to": "obsidian"
+    },
+    {
+      "from": "2026-06-13",
       "to": "obsidian"
     }
   ]
