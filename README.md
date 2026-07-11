@@ -1,41 +1,46 @@
-**Obsidian Notes and AI Brain OS Scripts**
+# Obsidian Notes and AI Brain OS
 
-### Overview
-The Obsidian vault contains various folders for personal Markdown notes, local RAG, graph, and Streamlit dashboard utilities, as well as integration helpers.
+Public-safe Obsidian vault sample and Python utilities for organizing Markdown notes with local AI/RAG workflows.
 
-#### Running the Dashboard
-To run the Streamlit dashboard, execute the command: `streamlit run scripts/app.py`
-The dashboard expects Ollama to be available at `http://localhost:11434`.
+## Highlights
 
-### Useful Commands
+- Markdown vault structure for project, learning, and AI notes
+- Python scripts for graph generation, note linking, RAG search, and local dashboard experiments
+- Local Ollama-based workflows, designed to run without committing private API keys
+- Sanitized public repository: personal inbox notes, browser history exports, and Obsidian workspace files are excluded
 
-1. **Run the Dashboard**
-	* Navigate to the Brain directory: `cd C:\Users\yeoh0\Brain`
-	* Run the command: `streamlit run scripts/app.py`
-	* If the browser does not open automatically, visit `http://localhost:8501`
+## Project Structure
 
-2. **Evolve AI**
-	* Navigate to the Brain directory: `cd C:\Users\yeoh0\Brain`
-	* Run the command: `python scripts/core/evolve.py`
-	* Expected output starts like: `🧠 Evolution started... 🔍 Analyzing: Android Studio 앱 설치 주소 오류.md...`
+```text
+Projects/       portfolio/project notes
+Knowledge/      curated concept notes
+scripts/        AI, graph, RAG, and dashboard utilities
+connectors/     local data connector helpers
+graph/          public graph sample output
+```
 
-3. **Sync GitHub Repository**
-	* Navigate to the scripts directory: `cd C:\Users\yeoh0\Brain\scripts`
-	* Run the command: `python github_sync.py`
-	* Expected output starts like: `GitHub 저장소 동기화 시작... 생성 완료: ai-agent`
+## Getting Started
 
-4. **Run the Linker Engine**
-	* Navigate to the Brain directory: `cd C:\Users\yeoh0\Brain`
-	* Run the command: `python scripts/core/linker_engine.py`
+Install the Python dependencies used by the scripts, then run the dashboard:
 
-5. **Import Chrome History**
-	* Navigate to the Brain directory: `cd C:\Users\yeoh0\Brain`
-	* Preview today's import: `python scripts/import_chrome_history.py --dry-run`
-	* Import today's recent Chrome visits: `python scripts/import_chrome_history.py`
-	* Import more rows or days: `python scripts/import_chrome_history.py --limit 300 --days 7`
-	* By default, notes are classified through `scripts/ai_classifier.py` and saved as concept notes such as `Knowledge\Database\Transaction.md`, with summaries, references, and `[[Wiki Links]]`.
-	* To keep date-based history logs instead, run: `python scripts/import_chrome_history.py --history-log`
+```bash
+streamlit run scripts/app.py
+```
 
-6. **Extract Knowledge From Existing History Logs**
-	* Preview concept notes from existing `Chrome History` files: `python scripts/extract_knowledge.py --dry-run`
-	* Promote existing history logs into concept notes: `python scripts/extract_knowledge.py`
+Most AI features expect Ollama to be running locally:
+
+```bash
+ollama serve
+```
+
+## Privacy Notes
+
+This repository is public. Do not commit:
+
+- Chrome or browser history exports
+- personal inbox notes
+- `.obsidian/` workspace and plugin settings
+- local vector databases or generated search history
+- API keys, tokens, or account recovery notes
+
+Private/local paths can be configured with `BRAIN_BASE_DIR`. If it is not set, scripts default to the repository root.

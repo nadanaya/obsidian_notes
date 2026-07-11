@@ -1,6 +1,14 @@
 .remote_obsidian_notes_check/
 /Copilot-
 
+# Private vault content
+.obsidian/
+Archive/
+inbox/
+**/Chrome History/
+Downloads PDF.md
+platform.openai.com.md
+
 # Python
 __pycache__/
 *.py[cod]
@@ -11,12 +19,9 @@ venv/
 # Local/vector database artifacts
 rag_db/
 scripts/rag_db/
+scripts/graph/search_history.json
 .smart-env/
 scripts/python
-
-# Obsidian local workspace and plugin bundles
-.obsidian/workspace.json
-.obsidian/plugins/
 
 # OS/editor noise
 .DS_Store
